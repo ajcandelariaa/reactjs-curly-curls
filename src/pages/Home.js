@@ -1,10 +1,12 @@
 import React from "react";
-import MainNavbar from "../components/navbar/MainNavbar";
+import Introduction from "../components/introduction/Introduction";
+import MainNavbar from "../components/navbar/mainNavbar/MainNavbar";
 
 function Home() {
   return (
     <div>
       <MainNavbar />
+      <Introduction />
     </div>
   );
 }
