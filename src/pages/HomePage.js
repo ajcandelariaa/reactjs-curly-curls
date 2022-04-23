@@ -1,14 +1,14 @@
 import React from "react";
-import Introduction from "../components/introduction/Introduction";
+import Home from "../components/home/Home";
 import MainNavbar from "../components/navbar/mainNavbar/MainNavbar";
 
-function Home() {
+function HomePage() {
   return (
     <div>
       <MainNavbar />
-      <Introduction />
+      <Home />
     </div>
   );
 }
 
-export default Home;
+export default HomePage;

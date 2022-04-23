@@ -1,0 +1,28 @@
+.container{
+    width: min(90%, 93.75rem);
+    margin-inline: auto;
+}
+.introduction{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+.introduction_flex{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.introduction_flex img{
+    height: 35vh;
+}
+.introduction_flex p{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 5rem;
+    color: #444444;
+}
+.introduction_flex .tagline{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}

@@ -16,6 +16,7 @@
     text-transform: uppercase;
     color: #2D0041;
     font-weight: bold;
+    cursor: pointer;
 }
 .links i{
     color: #9A66B6;
