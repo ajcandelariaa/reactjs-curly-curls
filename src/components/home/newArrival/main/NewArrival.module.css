@@ -1,0 +1,10 @@
+.container{
+    width: min(90%, 93.75rem);
+    margin-inline: auto;
+    padding: 30px 0px;
+}
+.newArrivalContent{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
