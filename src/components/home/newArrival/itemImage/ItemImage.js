@@ -1,19 +1,28 @@
-import React from 'react'
+import React from "react";
 import style from "./ItemImage.module.css";
 
-function ItemImage({newArrivals, activeArrival, setActiveArrival}) {
+function ItemImage({ newArrivals, activeArrival, setActiveArrival }) {
   return (
     <div className={style.itemImages}>
+      <img
+        src={newArrivals[activeArrival].itemImage}
+        alt={newArrivals[activeArrival].itemImage}
+        key={newArrivals[activeArrival].itemId}
+      />
       <div>
-        <img src={newArrivals[activeArrival].itemImage} alt={newArrivals[activeArrival].itemImage}/>
-      </div>
-      
-      <div>
-        <img src={newArrivals[1].itemImage} alt={newArrivals[activeArrival].itemImage}/>
-        <img src={newArrivals[2].itemImage} alt={newArrivals[activeArrival].itemImage}/>
+        {newArrivals
+          .filter((item) => item.itemId !== activeArrival)
+          .map((item2) => (
+            <img
+              src={item2.itemImage}
+              alt={item2.itemImage}
+              key={item2.itemId}
+              onClick={() => setActiveArrival(item2.itemId)}
+            />
+          ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default ItemImage
+export default ItemImage;
