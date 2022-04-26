@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import ItemDescription from "../itemDescription/ItemDescription";
-import ItemImage from "../itemImage/ItemImage";
 import style from "./NewArrival.module.css";
 import { getNewArrival } from "../../../../helpers/HomeData";
+import ItemImageMain from "../itemImageMain/ItemImageMain";
+import ItemImageSub from "../itemImageSub/ItemImageSub";
 
 function NewArrival() {
   const newArrivals = getNewArrival;
@@ -14,7 +15,8 @@ function NewArrival() {
         <p>New Arriaval</p>
         <p>Click here for more products {">>"}</p>
         <div className={style.newArrivalContent}>
-          <ItemImage newArrivals={newArrivals} activeArrival={activeArrival} setActiveArrival={setActiveArrival} />
+          <ItemImageMain newArrivals={newArrivals} activeArrival={activeArrival}/>
+          <ItemImageSub newArrivals={newArrivals} activeArrival={activeArrival} setActiveArrival={setActiveArrival} />
           <ItemDescription newArrivals={newArrivals} activeArrival={activeArrival} />
         </div>
       </div>

@@ -1,0 +1,5 @@
+.imagesContainer img{
+    padding: 1rem;
+    border: 1px solid #D495F0;
+    cursor: pointer;
+}
