@@ -1,0 +1,18 @@
+.newArrivals{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+.newArrivals img{
+    padding: .55rem;
+    border: 1px solid #D495F0;
+    width: 100%;
+}
+.newArrivalsSub{
+    display: flex;
+    flex-direction: column;
+}
+.newArrivalsSub img{
+    cursor: pointer;
+    width: 100%;
+}

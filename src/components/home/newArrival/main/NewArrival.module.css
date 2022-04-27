@@ -5,6 +5,19 @@
 }
 .newArrivalContent{
     display: grid;
-    grid-template-columns: 2fr 1fr auto;
+    grid-template-columns: 1fr 2fr;
     gap: 3rem;
+    margin-top: 20px;
+}
+.newArrival .text{
+    color: #2D0041;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newArrival .text span{
+    color: #FBA3CD;
+    text-transform: none;
+    margin-left: 10px;
+    font-weight: normal;
 }
