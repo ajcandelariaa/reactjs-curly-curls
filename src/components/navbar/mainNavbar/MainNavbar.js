@@ -13,9 +13,7 @@ function MainNavbar() {
         <i className="fa-solid fa-circle"></i>
         <Link to="about" spy={true} smooth={true} offset={-90} duration={500}>About</Link>
         <i className="fa-solid fa-circle"></i>
-        <Link to="products" spy={true} smooth={true} offset={-90} duration={500}>
-          <img src={logo} alt={logo} className={style.image_logo} />
-        </Link>
+        <img src={logo} alt={logo} className={style.image_logo} />
         <i className="fa-solid fa-circle"></i>
         <Link to="products" spy={true} smooth={true} offset={-90} duration={500}>Products</Link>
         <i className="fa-solid fa-circle"></i>
